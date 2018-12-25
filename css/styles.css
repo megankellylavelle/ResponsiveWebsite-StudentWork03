@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100vh;
+	margin: 0 auto;
+	font-family: 'Montserrat' , sans-serif;
+	line-height: 180%;
+	color: #666;
+	text-align: center;
+	background-color:
+	background-position: center center;
+
+}
+
+/* Navigation */
+.mainnavigation {
+	background-color: #FBB585;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	text-align: center;
+	list-style: none;
+	} 
+
+
+.mainnavigation a {
+	color: white;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-family: Helvetica; 
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	float: left;
+	}
+
+
+.mainnavigation a:hover {
+	background-color: lavender;
+	}
+
+.mainnavigation .icon {
+	display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+	.mainnavigation a {display:none;}
+	.mainnavigation a.icon{
+	float: right;
+	display: block;
+	}
+	}
+
+	@media screen and (max-width: 600px){
+	.mainnavigation.responsive {position: relative;}
+	.mainnavigation.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+.mainnavigation.responsive a {
+	float: none;
+	display: block;
+	text-align: center;
+	}
+	}
+
+/* Parallax */
+.parallax1 {
+	background-image: url("../images/stickers.JPG");
+	min-height: 100%;
+}
+
+.parallax2 {
+	background-image: url("../images/IMG_5504.jpeg");
+	min-height: 60%;
+}
+
+.parallax3 {
+	background-image: url("../images/womencenter.jpg");
+	min-height: 60%;
+}
+
+.parallax4 {
+	background-image: url("../images/IMG_3102.JPG");
+	min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+	position: relative;
+	opacity: 0.75;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+/* Index Page */
+.philindex {
+	overflow: auto;
+	padding: 50px 90px;
+	background-color: #F3BCC3; 
+}
+
+.aboutindex {
+	overflow: auto;
+	padding: 50px 80px;
+	background-color: #AE8EC1; 
+	color: white;
+	height: 70%;
+	width: 100%;
+}
+
+
+.block {
+	overflow: auto;
+	padding: 50px 80px;
+	background-color: #B7D9D9; 
+}
+
+
+
+.heading {
+	position: absolute;
+	color: #B7D9D9;
+	font-family: ;
+	font-size: 600%;
+	top: 38%;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	text-shadow: 0 0 10px #000;
+}
+
+.heading-sml {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	color: #B7D9D9;
+	font-size: 300%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 0 0 10px #000;
+}
+
+.two-col {
+	float: left;
+	width: 50%;
+	padding: 0 4%;
+	text-align: left;
+}
+
+
+
+@media (max-width: 768px) {
+	.heading {
+		font-size: 250%;
+	}
+	.heading-sml {
+		font-size: 180%;
+	}
+	.two-col {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+
+
+
+
+/* Philanthropy Page */
+
+.phil {
+	overflow: auto;
+	padding: 150px 80px;
+	background-color: #F3BCC3;
+	height: 100%;
+	width: 100%;
+}
+
+
+.philform {
+	overflow: auto;
+	padding: 10px 80px;
+	background-color: #F3BCC3;
+	height: 150%;
+	width: 100%;
+}
+@media screen and (max-width: 600px){
+
+	.philform {
+	padding: 10px 20px;
+	background-color: #F3BCC3;
+	width: 100%;
+	}
+
+}
+
+/* About Page */
+.about {
+	overflow: auto;
+	padding: 50px 80px;
+	color: white;
+	height: 100%;
+	width: 100%;
+	background-color: #AE8EC1; 
+}
+
+
+.about-col {
+	float: left;
+	width: 50%;
+	padding: 0 4%;
+	text-align: left;
+}
+
+.korina {
+	padding: 10px; 
+	width: 127%;
+}
+
+
+.quote {
+	overflow: auto;
+	padding: 50px 80px;
+	background-color: #FBB585; 
+}
+
+/* Shop Page */
+.items {
+    float: left;
+}
+
+figure {
+    display: block;
+    width: 202px;
+    height: 170px;
+    background-color: orange;
+    margin: 0px;
+    padding: 9px;
+    text-align: right;
+}
+
+figure img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid purple;
+}
+
+figcaption {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    }
+
+.column {
+    flex: 25%;
+    max-width: 20%;
+    padding: 10px;
+    margin: 50px auto;
+    }
+
+.column img {
+    margin-top: 5px;
+    width: 100%;
+    vertical-align: middle;
+    }
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.footer {
+   position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #FBB585;
+   text-align: center;
+   padding: 14px;
+} 
+
+.footer2 {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #FBB585;
+text-align: center;
+padding: 14px;
+}
+
+
+/* Style for the form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #FBB585 ;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #F3BCC3 ;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #FBB585;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+  .col-25, .container, .row2, input[type=submit] {
+    width: 100%;
+    margin-top: 20px;
+
+  }
+}
+
+
+
+/* Style for the Oops page*/
+
+.paragraph {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25%;
+}
+
+
+@media screen and (max-width: 600px){
+
+	.about {
+		padding: 50px 20px;
+	}
+
+	.about-col {
+		width: 75%;
+	}
+}
